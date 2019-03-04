@@ -29,6 +29,7 @@ h2{
     margin: 0 20px;
     border-bottom: 1px solid #e9e9e9;
     color: #555;
+    font-size: 20px;
 }
 
 #feedback p{
@@ -39,6 +40,7 @@ h2{
 
 #output strong{
     color: #d6621e;
+    font-size: 20px;
 }
 
 label{

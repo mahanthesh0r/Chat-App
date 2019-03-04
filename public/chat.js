@@ -1,4 +1,5 @@
 //Make connection 
+//var socket = io.connect('http://localhost:4000');
 var socket = io.connect('https://mysterious-tor-40612.herokuapp.com');
 
 //Query DOM
@@ -14,6 +15,8 @@ var message = document.getElementById('message');
          message: message.value,
          handle: handle.value
      });
+
+     document.getElementById('message').value='';
  });
 
  message.addEventListener('keypress', function(){
@@ -24,7 +27,6 @@ var message = document.getElementById('message');
  socket.on('chat',function(data){
     feedback.innerHTML = "";
      output.innerHTML += '<p><strong>'+ data.handle +': </strong>'+ data.message + '</p>';
-
  });
 
  socket.on('typing', function(data){
