@@ -6,7 +6,7 @@ const port = process.env.PORT || 4000;
 
 //App setup
 var app = express();
-var server = app.listen(port, function(){
+var server = app.listen(port, function(){ 
     console.log('Listening to port 4000');
 });
 
