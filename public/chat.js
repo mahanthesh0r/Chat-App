@@ -1,5 +1,5 @@
 //Make connection 
-var socket = io.connect('http://localhost:4000');
+var socket = io.connect('https://mysterious-tor-40612.herokuapp.com');
 
 //Query DOM
 var message = document.getElementById('message');
